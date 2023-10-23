@@ -1,4 +1,4 @@
-# My Self Learning React Project
+# React Project
 
 This is a repository for my self-learning React project. In this project, I will be building a simple web application using React and other related technologies.
 
