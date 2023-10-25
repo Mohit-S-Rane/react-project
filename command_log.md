@@ -5,6 +5,8 @@ This log file serves as a repository for command syntax, providing a valuable re
 ```
 
 npx create-react-app 01react-learn
-npm create vite@latest
+npm create vite@latest  => 01vite-react
+npm create vite@latest  => 02counter
+
 
 ```
