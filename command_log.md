@@ -8,5 +8,9 @@ npx create-react-app 01react-learn
 npm create vite@latest  => 01vite-react
 npm create vite@latest  => 02counter
 
+npm create vite@latest  => 03tailwindprops
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
 
 ```
