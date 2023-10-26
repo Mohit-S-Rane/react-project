@@ -12,5 +12,7 @@ npm create vite@latest  => 03tailwindprops
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
+npm create vite@latest  => 04bgChanger
+
 
 ```
