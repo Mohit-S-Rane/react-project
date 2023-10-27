@@ -1,10 +1,12 @@
-import { useState, useCallback, useEffect} from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 
 function App() {
   const [length, setLength] = useState(8)
   const [numberAllowed, setNumberAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
   const [password, setPassword] = useState("")
+
+  const passwordRef = useRef(null)
 
   const passwordGenerator = useCallback(() => {
     let pass = ""
@@ -24,7 +26,13 @@ function App() {
 
   }, [length, numberAllowed, charAllowed, setPassword])
 
-  useEffect(()=>{
+  const passowrdCopyToClipboard = useCallback(() => {
+    passwordRef.current?.select()
+    // passwordRef.current?.setSelectionRange(0, 5)
+    window.navigator.clipboard.writeText(password)
+  }, [password])
+
+  useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
 
@@ -39,9 +47,14 @@ function App() {
             className='outline-none w-full py-1 px-3'
             placeholder='Password'
             readOnly
+            ref={passwordRef}
           />
           <button
-            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>
+            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+            type='button'
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            onClick={passowrdCopyToClipboard}>
             copy
           </button>
         </div>
