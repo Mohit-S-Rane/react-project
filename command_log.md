@@ -31,5 +31,8 @@ configure tailwind as mention above
 npm create vite@latest  => 05passwordGenerator
 configure tailwind as mention above
 
+npm create vite@latest  => 06currencyConvertor
+configure tailwind as mention above
+
 
 ```
