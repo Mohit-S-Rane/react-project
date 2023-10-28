@@ -34,5 +34,8 @@ configure tailwind as mention above
 npm create vite@latest  => 06currencyConvertor
 configure tailwind as mention above
 
+npm create vite@latest  => 07reactRouterDom
+configure tailwind as mention above
+npm i react-router-dom
 
 ```
