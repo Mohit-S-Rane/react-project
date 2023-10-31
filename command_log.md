@@ -40,5 +40,10 @@ npm i react-router-dom
 
 npm create vite@latest  => 08miniContext
 
+npm create vite@latest  => 08themeswitcher
+configure tailwind as mention above
+configure tailwind for dark mode as mention below
+  darkMode: "class",
+
 
 ```
