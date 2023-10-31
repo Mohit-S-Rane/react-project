@@ -38,4 +38,7 @@ npm create vite@latest  => 07reactRouterDom
 configure tailwind as mention above
 npm i react-router-dom
 
+npm create vite@latest  => 08miniContext
+
+
 ```
